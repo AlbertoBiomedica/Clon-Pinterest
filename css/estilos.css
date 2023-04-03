@@ -23,7 +23,7 @@ html, body{
 ::-webkit-scrollbar {
     display: none;
 }
-.contenedor-cabecero{
+#navbar-pinterest{
     font-size: var(--font-size);
     display: flex;
     align-items: center;
@@ -31,6 +31,10 @@ html, body{
     margin: auto;
     justify-content: space-around;
     padding: var(--pading-contenedor-header);
+    position: fixed;
+    background-color: white;
+    margin-bottom: 100px;
+    z-index: 10;
 }
 #btn-logo{
     padding: var(--padding-logo);
@@ -144,6 +148,7 @@ html, body{
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
+    margin-top: 80px;
 }
 .contenedor-btn-explorar{
     width: 100%;
