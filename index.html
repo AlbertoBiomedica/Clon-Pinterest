@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon de Pinterest</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="https://kit.fontawesome.com/e2fd10e99b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <section class="contenedor-cabecero">
+            <div id="btn-logo">
+                <a href="#">
+                    <svg class="GjR" height="24" width="24" viewBox="0 0 24 24" aria-label="Pinterest" role="img">
+                        <path
+                            d="M0 12c0 5.123 3.211 9.497 7.73 11.218-.11-.937-.227-2.482.025-3.566.217-.932 1.401-5.938 1.401-5.938s-.357-.715-.357-1.774c0-1.66.962-2.9 2.161-2.9 1.02 0 1.512.765 1.512 1.682 0 1.025-.653 2.557-.99 3.978-.281 1.189.597 2.159 1.769 2.159 2.123 0 3.756-2.239 3.756-5.471 0-2.861-2.056-4.86-4.991-4.86-3.398 0-5.393 2.549-5.393 5.184 0 1.027.395 2.127.889 2.726a.36.36 0 0 1 .083.343c-.091.378-.293 1.189-.332 1.355-.053.218-.173.265-.4.159-1.492-.694-2.424-2.875-2.424-4.627 0-3.769 2.737-7.229 7.892-7.229 4.144 0 7.365 2.953 7.365 6.899 0 4.117-2.595 7.431-6.199 7.431-1.211 0-2.348-.63-2.738-1.373 0 0-.599 2.282-.744 2.84-.282 1.084-1.064 2.456-1.549 3.235C9.584 23.815 10.77 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12">
+                        </path>
+                    </svg>
+                    <h2>Pinterest</h2>
+                </a>
+            </div>
+            <div id="btn-hoy">
+                <a href="#">Hoy</a>
+            </div>
+            <div id="btn-explorar">
+                <a href="#">Explorar</a>
+            </div>
+            <div id="btn-buscar">
+                <form action="">
+                    <label for="search">
+                        <svg class="gUZ" viewBox="0 0 24 24" aria-label="Buscar" role="img">
+                            <path
+                                d="M10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6m13.12 2.88-4.26-4.26A9.842 9.842 0 0 0 20 10c0-5.52-4.48-10-10-10S0 4.48 0 10s4.48 10 10 10c1.67 0 3.24-.41 4.62-1.14l4.26 4.26a3 3 0 0 0 4.24 0 3 3 0 0 0 0-4.24">
+                            </path>
+                        </svg>
+                    </label>
+                    <input type="text" name="search" id="search"
+                        placeholder="Encentra ideas sobre cenas fáciles, moda, etc.">
+                </form>
+            </div>
+            <div id="btn-inicio">
+                <a href="#">Iniciar sesión</a>
+            </div>
+            <div id="btn-registrar">
+                <a href="#">Regístrate</a>
+            </div>
+            <div id="btn-despliegue">
+                <a href="#">
+                    <svg class="gUZ ztu U9O kVc" height="12" width="12" viewBox="0 0 24 24" aria-hidden="true"
+                        aria-label="" role="img">
+                        <path
+                            d="M12 19.5.66 8.29c-.88-.86-.88-2.27 0-3.14.88-.87 2.3-.87 3.18 0L12 13.21l8.16-8.06c.88-.87 2.3-.87 3.18 0 .88.87.88 2.28 0 3.14L12 19.5z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </header>
+    <div class="contenedor-vacio" id="btn-buscar-activo">
+
+    </div>
+    <main class="contenedor-principal">
+        <section class="contendedor-drinks">
+            <div class="contenedor-btn-explorar">
+                <a href="#">Explorar</a>
+            </div>
+            <div class="contenedor-texto-drinks">
+                <h2>Food and Drinks</h2>
+                <p>Discover food and drink on Pinterest for every occasion and any meal of the day. Whether it's quick
+                    and easy dinner or appetizers for entertaining, there’s a variety of inspiration to choose from.</p>
+                <p>What delicious dishes will you find today? Visit the corners of some of the top culinary creators on
+                    Pinterest, take a trip through collections of international cuisines and be sure to check out the
+                    Top 10 food and drink recipes that are taking kitchens by storm.</p>
+                <p>Before you get ready for your next shindig, start here to select meals and beverages that are sure to
+                    impress your guests or simply shake up a Saturday night. See top ideas and trends for easy meals,
+                    drink recipes, snacks and more.</p>
+            </div>
+        </section>
+        <section class="contenedor-recetas">
+            <h2>Find recipes by cuisine</h2>
+            <div class="contenedor-recetas-img">
+                <div class="contenedor-img">
+                    <p>Cocina del mundo</p>
+                    <a href="#">
+                        <img alt="Image rep" fetchpriority="auto" loading="auto"
+                            src="https://i.pinimg.com/474x/0d/be/16/0dbe16aabab42dc67a57b1656dabf7bb.jpg"
+                            style="object-fit:cover">
+                    </a>
+                </div>
+                <div class="contenedor-img">
+                    <p>Recetas Griegas</p>
+                    <a href="#">
+                        <img alt="Image rep" fetchpriority="auto" loading="auto"
+                            src="https://i.pinimg.com/474x/7d/a8/95/7da89590484314f5bda3443327830df4.jpg"
+                            style="object-fit:cover">
+                    </a>
+                </div>
+                <div class="contenedor-img">
+                    <p>Recetas Mexicanas</p>
+                    <a href="#">
+                        <img alt="Image rep" fetchpriority="auto" loading="auto"
+                            src="https://i.pinimg.com/474x/0f/6b/e1/0f6be16000a2e6066dc24a378c6b7e4a.jpg"
+                            style="object-fit:cover">
+                    </a>
+                </div>
+                <div class="contenedor-img">
+                    <p>Recetas Italianas</p>
+                    <a href="#">
+                        <img alt="Image rep" fetchpriority="auto" loading="auto"
+                            src="https://i.pinimg.com/474x/c0/79/36/c0793619bc91405db6085062cbe15cd1.jpg"
+                            style="object-fit: cover;">
+                    </a>
+                </div>
+                <div class="contenedor-img">
+                    <p>Recetas Americanas</p>
+                    <a href="#">
+                        <img alt="Image rep" fetchpriority="auto" loading="auto"
+                            src="https://i.pinimg.com/474x/75/ab/b2/75abb28623b2fa9a6062a4df193a952b.jpg"
+                            style="object-fit: cover;">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor-descubre">
+            <h2>Descubre creadores de Comida y Bebida</h2>
+            <div class="contenedor-descubre-card">
+                <div class="contenedor-card">
+                    <div class="card-1">
+                        <div class="card-1-contenedor">
+                            <div class="card-1-contenedor-1">
+                                <div class="card-1-contenedor-1-2">
+                                    <div class="card-1-contenedor-1-3">
+                                        <img alt="Jocelyn Delk Adams | Grandbaby Cakes" fetchpriority="auto"
+                                            loading="auto"
+                                            src="https://i.pinimg.com/280x280_RS/83/11/41/8311418d933455c9c634df78847056fe.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Jocelyn Delk Adams | Grandbaby Cakes</h3>
+                            <p>Award Winning Cookbook Author of Grandbaby Cakes, TV personality...</p>
+                        </div>
+                    </div>
+                    <div class="card-2">
+                        <div class="card-img-1">
+                            <img alt="Pin image" fetchpriority="auto" loading="auto"
+                                src="https://i.pinimg.com/236x/3c/86/59/3c865981ee6ab0810e3458c6d8cf15e1.jpg">
+                        </div>
+                        <div class="card-img-2">
+                            <img alt="Pin image" fetchpriority="auto" loading="auto"
+                                src="https://i.pinimg.com/236x/0e/e2/c2/0ee2c250e0045c4f0b116fd4c956c1a2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-card" style="background-color: #D7EDFF;">
+                    <div class="card-1">
+                        <div class="card-1-contenedor">
+                            <div class="card-1-contenedor-1">
+                                <div class="card-1-contenedor-1-2">
+                                    <div class="card-1-contenedor-1-3">
+                                        <img alt="Peter Som" fetchpriority="auto" loading="auto"
+                                            src="https://i.pinimg.com/280x280_RS/3b/95/16/3b95165d7327ef94e0f36452bc9d85da.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 id="peter">Peter Som</h3>
+                            <p>The musings of fashion designer and food lover Peter Som. Come visit...</p>
+                        </div>
+                    </div>
+                    <div class="card-2">
+                        <div class="card-img-1">
+                            <img alt="Pin image" fetchpriority="auto" loading="auto"
+                                src="https://i.pinimg.com/236x/af/d3/c9/afd3c9743d821da574733990118e4a23.jpg">
+                        </div>
+                        <div class="card-img-2">
+                            <img alt="Pin image" fetchpriority="auto" loading="auto"
+                                src="https://i.pinimg.com/236x/09/e7/67/09e7673f22378d1787183c63759f6ba2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-card" style="background-color: #DAFFF6;">
+                    <div class="card-1">
+                        <div class="card-1-contenedor">
+                            <div class="card-1-contenedor-1">
+                                <div class="card-1-contenedor-1-2">
+                                    <div class="card-1-contenedor-1-3">
+                                        <img alt="Joy the Baker•Classic recipes with a whole lotta heart and sugar"
+                                            fetchpriority="auto" loading="auto"
+                                            src="https://i.pinimg.com/280x280_RS/cd/9e/cf/cd9ecf4225c11c901e5e3b78543622ce.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Joy the Baker•Classic recipes with a whole lotta heart and sugar</h3>
+                            <p>I create classic recipes with a modern twist for the aspiring, novice, and...</p>
+                        </div>
+                    </div>
+                    <div class="card-2">
+                        <div class="card-img-1">
+                            <img alt="Pin image" fetchpriority="auto" loading="auto"
+                                src="https://i.pinimg.com/236x/3e/28/4b/3e284beb41a719cf8d2972c3d501042a.jpg">
+                        </div>
+                        <div class="card-img-2">
+                            <img alt="Pin image" fetchpriority="auto" loading="auto"
+                                src="https://i.pinimg.com/236x/dd/a7/f4/dda7f4ac1a89871e48b486618bfc799d.jpg">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="contenedor-ideas">
+            <h2>Las 10 ideas principales para Comida y Bebida</h2>
+            <div class="contenedor-ideas-card">
+                <div class="card-ideas">
+                    <div class="card-ideas-header">
+                        <h3>1</h3>
+                        <a href="#">Vanilla Cupcakes - softest, fluffiest and most delicious</a>
+                    </div>
+                    <div class="card-ideas-body">
+                        <img alt="Recetas De Dulces Caseros, Dulces Y Salados, Recetas Dulces, Comida, Recetas De Postres Indios, Cocinar, Recetas"
+                            src="https://i.pinimg.com/474x/a2/c6/de/a2c6de7bcbe70dc85c92f6ddabb581c2.jpg"
+                            loading="lazy">
+                    </div>
+                </div>
+                <div class="card-ideas">
+                    <div class="card-ideas-header">
+                        <h3>2</h3>
+                        <a href="#">Pav Bhaji in a pressure&nbsp;cooker</a>
+                    </div>
+                    <div class="card-ideas-body">
+                        <img alt="Album De Fotos Manualidades, Comida, Recetas Indias Saludables, Recetas De Verduras, Recetas De Desayuno, Pav Bhaji, Gourmet, Gastronomía India, Receta De Cocina"
+                            src="https://i.pinimg.com/474x/73/27/d2/7327d2e434fb5c7225845e6832ee94a1.jpg"
+                            loading="lazy">
+                    </div>
+                </div>
+                <div class="card-ideas">
+                    <div class="card-ideas-header">
+                        <h3>3</h3>
+                        <a href="#">Steak Sandwiches!</a>
+                    </div>
+                    <div class="card-ideas-body">
+                        <img alt="Ensaladas, Recetas Fáciles, Sabroso, Comida, Recetas De Carne De Ternera, Recetas Para Cena, Recetas Favoritas, Recetas Dulces"
+                            src="https://i.pinimg.com/474x/b8/ca/b5/b8cab5f80ea2025fe3dc4364651f80d7.jpg"
+                            loading="lazy">
+                    </div>
+                </div>
+                <div class="card-ideas">
+                    <div class="card-ideas-header">
+                        <h3>4</h3>
+                        <a href="#">PANZANELLA SALAD</a>
+                    </div>
+                    <div class="card-ideas-body">
+                        <img alt="Ensaladas De Verano, Ensaladas Frescas, Aperitivos, Comida Nutritiva, Nutritivo, Recetas Para Cocinar, Magdalenas Caseras, Cosas Ricas, Comidas Faciles"
+                            src="https://i.pinimg.com/474x/ac/bc/c2/acbcc2f801e77b68ed5f23d281c9ca96.jpg"
+                            loading="lazy">
+                    </div>
+                </div>
+                <div class="card-ideas">
+                    <div class="card-ideas-header">
+                        <h3>5</h3>
+                        <a href="#">Caramel Sauce at home- silky, smooth & dreamy</a>
+                    </div>
+                    <div class="card-ideas-body">
+                        <img alt="Receta De Postres Frios, Dulces Y Salados, Desayuno, Pasteles, Mini Tartaletas, Cafe Helado, Caramelo, Recetas De Dulces Faciles, Recetas Para Cocinar"
+                            src="https://i.pinimg.com/474x/47/d2/8c/47d28c8a9378d640ba48df8543a6fe82.jpg"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <a href="#" id="btn-ver-mas">Ver más ideas</a>
+        </section>
+        <section class="inpiration">
+            <h2>More cooking inspiration</h2>
+            <p>Cooking is a life-long passion that can be extremely rewarding, energizing, and delicious. To further
+                hone your kitchen skills, check out the following recipes and culinary ideas that are sure to delight
+                and inspire your inner chef -</p>
+            <a href="#">The best chocolate chip cookies,</a>
+            <a href="#">Healthy breakfast ideas to try at home,</a>
+            <a href="#">Main dinner courses to truly wow</a>
+        </section>
+        <section class="contenedor-recetas">
+            <h2>Fresh ideas for every meal</h2>
+            <div class="contenedor-recetas-img">
+                <div class="contenedor-img">
+                    <p>Recetas Para Cena</p>
+                    <a href="#">
+                        <img alt="Image rep" fetchpriority="auto" loading="auto"
+                            src="https://i.pinimg.com/474x/f4/09/8b/f4098bb0b85fd9c77c0e95333273d445.jpg">
+                    </a>
+                </div>
+                <div class="contenedor-img">
+                    <p>Platos Fáciles</p>
+                    <a href="#">
+                        <img alt="Image rep" fetchpriority="auto" loading="auto"
+                            src="https://i.pinimg.com/474x/f4/e3/a5/f4e3a50ab2727aa65fafbfa66fd9d13e.jpg">
+                    </a>
+                </div>
+                <div class="contenedor-img">
+                    <p>Desayuno y Brunch</p>
+                    <a href="#">
+                        <img alt="Image rep" fetchpriority="auto" loading="auto"
+                            src="https://i.pinimg.com/474x/62/ed/8b/62ed8b667a96a1e9a7c283227adc6b29.jpg">
+                    </a>
+                </div>
+                <div class="contenedor-img">
+                    <p>Postres</p>
+                    <a href="#">
+                        <img alt="Image rep" fetchpriority="auto" loading="auto"
+                            src="https://i.pinimg.com/474x/07/29/40/072940767b788d3a546b7d9a961c3dae.jpg">
+                    </a>
+                </div>
+                <div class="contenedor-img">
+                    <p>Recetas De Cóctel</p>
+                    <a href="#">
+                        <img alt="Image rep" fetchpriority="auto" loading="auto"
+                            src="https://i.pinimg.com/474x/c7/bc/ce/c7bcce10d3ab57804cc06dc05dd62218.jpg">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor-recetas-2">
+            <h2>Discover Boards on Food and Drinks</h2>
+            <div class="contenedor-recetas-img-2">
+                <div class="contenedor-img-recetas-card">
+                    <div class="contenedor-img-recetas">
+                        <div class="contenedor-receta-img-1">
+                            <a href="#">
+                                <img alt="Food Platters &amp; Boards" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/550x/33/46/fa/3346fa968ca179389488fbbf6c360acb.jpg">
+                            </a>
+                        </div>
+                        <div class="contenedor-receta-img-2">
+                            <a href="#">
+                                <img alt="Food Platters &amp; Boards" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/170x/62/5b/2e/625b2e4e8a49d421d159fe7fe72441dc.jpg">
+                            </a>
+                            <a href="#">
+                                <img alt="Food Platters &amp; Boards" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/170x/fa/76/46/fa7646a60ef6d9ace4da8d9ffd3f7043.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contenedor-informacion-card">
+                        <div class="informacion-titulo-card">
+                            <h3>Food Platters & Boards</h3>
+                            <img alt="Homebody Eats | Delicious Recipes" fetchpriority="auto" loading="auto"
+                                src="https://i.pinimg.com/75x75_RS/f9/07/d7/f907d7d99cd55d2bdf893e5cf8e2d0f6.jpg">
+                        </div>
+                        <a href="#">Por Homebody Eats | Delicious Recipes</a>
+                    </div>
+                </div>
+                <div class="contenedor-img-recetas-card">
+                    <div class="contenedor-img-recetas">
+                        <div class="contenedor-receta-img-1">
+                            <a href="#">
+                                <img alt="One-Bowl Rice Dishes" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/550x/27/5b/f6/275bf6ce5b7e82ef7b9f859537f9c960.jpg">
+                            </a>
+                        </div>
+                        <div class="contenedor-receta-img-2">
+                            <a href="#">
+                                <img alt="One-Bowl Rice Dishes" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/170x/b2/88/77/b28877740d0531a6b24064fd1e3fd0a6.jpg">
+                            </a>
+                            <a href="#">
+                                <img alt="One-Bowl Rice Dishes" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/170x/9f/f4/15/9ff415aba206f746eae06562f6185654.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contenedor-informacion-card">
+                        <div class="informacion-titulo-card">
+                            <h3>One-Bowl Rice Dishes</h3>
+                            <img alt="Food &amp; Wine" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/75x75_RS/0f/27/b6/0f27b6800de6a18332dba782fa8a927d.jpg">
+                        </div>
+                        <a href="#">Por Food & Wine</a>
+                    </div>
+                </div>
+                <div class="contenedor-img-recetas-card">
+                    <div class="contenedor-img-recetas">
+                        <div class="contenedor-receta-img-1">
+                            <a href="#">
+                                <img alt="Bread Scoring and Stenciling" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/550x/00/38/91/00389132480d962ad883ee17319d04fc.jpg">
+                            </a>
+                        </div>
+                        <div class="contenedor-receta-img-2">
+                            <a href="#">
+                                <img alt="Bread Scoring and Stenciling" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/170x/4a/5c/7c/4a5c7c3c796281f542bf5e20df92afe6.jpg">
+                            </a>
+                            <a href="#">
+                                <img alt="Bread Scoring and Stenciling" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/170x/a9/c8/f0/a9c8f002be0c9c3ea7ad81dd886644ca.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contenedor-informacion-card">
+                        <div class="informacion-titulo-card">
+                            <h3>Bread Scoring and Stenciling</h3>
+                            <img alt="Breadtopia" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/75x75_RS/a0/44/1f/a0441f6c3e31805bfaaeb61a87c287ec.jpg">
+                        </div>
+                        <a href="#">Por Breadtopia</a>
+                    </div>
+                </div>
+                <div class="contenedor-img-recetas-card">
+                    <div class="contenedor-img-recetas">
+                        <div class="contenedor-receta-img-1">
+                            <a href="#">
+                                <img alt="Happy Hour Recipes" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/550x/93/ce/33/93ce334ef354f5ac6dc4cf7defc8e5c4.jpg">
+                            </a>
+                        </div>
+                        <div class="contenedor-receta-img-2">
+                            <a href="#">
+                                <img alt="Happy Hour Recipes" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/170x/60/43/37/604337962e85b90c93813197395ee662.jpg">
+                            </a>
+                            <a href="#">
+                                <img alt="Happy Hour Recipes" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/170x/b7/8e/b3/b78eb39fcc9d25e157fb9a8099e06092.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contenedor-informacion-card">
+                        <div class="informacion-titulo-card">
+                            <h3>Happy Hour Recipes</h3>
+                            <img alt="The Speckled Palate" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/75x75_RS/7e/4f/86/7e4f866ca9473b10a74cd625f8914390.jpg">
+                        </div>
+                        <a href="#">Por The Speckled Palate</a>
+                    </div>
+                </div>
+                <div class="contenedor-img-recetas-card">
+                    <div class="contenedor-img-recetas">
+                        <div class="contenedor-receta-img-1">
+                            <a href="#">
+                                <img alt="Summer Recipes" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/550x/67/7d/80/677d80de293c3c8ba90109ad232de9dd.jpg">
+                            </a>
+                        </div>
+                        <div class="contenedor-receta-img-2">
+                            <a href="#">
+                                <img alt="Summer Recipes" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/170x/8e/6a/5a/8e6a5a4732ea2a9695c0f20ca42e7219.jpg">
+                            </a>
+                            <a href="#">
+                                <img alt="Summer Recipes" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/170x/db/30/ee/db30eee49bba075feab4f854b5e4d296.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contenedor-informacion-card">
+                        <div class="informacion-titulo-card">
+                            <h3>Summer Recipes</h3>
+                            <img alt="Half Baked Harvest" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/75x75_RS/74/8e/98/748e98d4df1188ca89fab1dc005dfb09.jpg">
+                        </div>
+                        <a href="#">Por Half Baked Harvest</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="busqueda-principal">
+            <h2>Búsquedas principales de Pinterest de Comida y Bebida</h2>
+            <div class="contenedor-busqueda-principal">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Funeral Potatoes</a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Green Bean Casserole</a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i> April Fools Food</a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Easy Adult Lunches For Work</a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Easter Appetizers Easy</a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Lemon Bars</a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Cowboy Caviar</a>
+            </div>
+        </section>
+        <section class="videos-populares">
+            <h2>Ver videos populares de Comida y Bebida</h2>
+            <div class="contenedor-videos-populares">
+                <div class="contenedor-videos-populares-img">
+                    <a href="#">
+                        <img alt="Saporito e perfetto per un aperitivo che stupirà chiunque!" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/200x/03/84/70/03847070c2204c66d88e2aa77001fb68.jpg" style="border-top-left-radius: 32px; border-bottom-left-radius: 32px; padding-right: 4px;">
+                    </a>
+                </div>
+                <div class="contenedor-videos-populares-img">
+                    <a href="#">
+                        <img alt="Klik op de video voor de ingrediënten en instructies. 😃" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/200x/14/a0/cd/14a0cd601c733018effdce301fabcfc6.jpg" style="padding-right: 4px;">
+                    </a>
+                </div>
+                <div class="contenedor-videos-populares-img">
+                    <a href="#">
+                        <img alt="Take your mashed potatoes up a notch with these impressive little potato swirls. They can be prepared a day ahead, refrigerated then baked just before serving time, making a dinner party – or just dinner – a breeze!" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/200x/7e/8d/a7/7e8da771b469d1001d1a6996c924f24b.jpg" style="padding-right: 4px;">
+                    </a>
+                </div>
+                <div class="contenedor-videos-populares-img">
+                    <a href="#">
+                        <img alt="Essa dica é perfeita!" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/200x/a6/82/b0/a682b079897dc4cb8a160fabdb135075.jpg" style="border-top-right-radius: 32px; border-bottom-right-radius: 32px;">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
